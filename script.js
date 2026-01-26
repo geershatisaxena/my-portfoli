@@ -362,8 +362,8 @@ function initCertificateModal() {
             image: "Certificates/Cert31.png"
         },
         {
-            title: "Data Wrangling with Python",
-            description: "Successfully completed the “Data Wrangling with Python” program from Babu Banarasi Das University, powered by IBM, gaining practical skills in data cleaning, transformation, and preparation using Python libraries such as Pandas and NumPy, while learning techniques to handle missing data, outliers, and inconsistencies to ensure high-quality datasets for effective analysis and modeling.",
+            title: "Strengthen Your Decision-Making with Generative AI",
+            description: "Successfully Completed the “Strengthen Your Decision-Making with Generative AI” program, gaining a practical understanding of how generative AI can be applied to support data-driven decision-making. The program focused on using AI-powered tools to analyze information, generate insights, evaluate alternatives, and enhance strategic and operational decisions, while also considering responsible and ethical use of generative AI in real-world business contexts.",
             image: "https://media.licdn.com/dms/image/v2/D5622AQHhfNzIOJ4Qcg/feedshare-shrink_1280/B56Zv6ouX_JcAc-/0/1769436538661?e=1770854400&v=beta&t=yij6yEAdwqKu_AuJc_3KuVtXI-Vwmkj0_gUGv7fpBtc"
         }
     ];
