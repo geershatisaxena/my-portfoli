@@ -961,7 +961,7 @@ img {
     background: #f1d6d6;
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(241, 240, 240, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(108, 99, 255, 0.1);
 }

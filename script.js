@@ -360,6 +360,11 @@ function initCertificateModal() {
             title: "Predictive Modeling Fundamentals I",
             description: "Successfully completed the “Predictive Modeling Fundamentals I” program from Babu Banarasi Das University, powered by IBM, gaining in-depth knowledge of predictive modeling principles and supervised learning techniques, including linear and logistic regression, classification methods, feature engineering, and model evaluation metrics, while learning how to interpret model outputs and apply predictive insights to solve real-world business and analytical problems in a structured, data-driven manner.",
             image: "Certificates/Cert31.png"
+        },
+        {
+            title: "Data Wrangling with Python",
+            description: "Successfully completed the “Data Wrangling with Python” program from Babu Banarasi Das University, powered by IBM, gaining practical skills in data cleaning, transformation, and preparation using Python libraries such as Pandas and NumPy, while learning techniques to handle missing data, outliers, and inconsistencies to ensure high-quality datasets for effective analysis and modeling.",
+            image: "https://media.licdn.com/dms/image/v2/D5622AQHhfNzIOJ4Qcg/feedshare-shrink_1280/B56Zv6ouX_JcAc-/0/1769436538661?e=1770854400&v=beta&t=yij6yEAdwqKu_AuJc_3KuVtXI-Vwmkj0_gUGv7fpBtc"
         }
     ];
     
