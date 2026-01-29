@@ -245,12 +245,15 @@ img {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    color: white;
-    font-weight: 700;
     border-radius: 50%;
-    font-size: 1.25rem;
-    box-shadow: 0 0 20px var(--primary-glow);
+    text-decoration: none;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
 }
 
 .name {
