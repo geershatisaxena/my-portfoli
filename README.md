@@ -394,6 +394,35 @@ Before considering project complete:
 
 ---
 
+### 🔧 Backend (Node + SQLite)
+
+Added a minimal Express backend with a SQLite database to collect contact messages and serve the static site while developing.
+
+- Install dependencies:
+
+```bash
+cd server
+npm install
+```
+
+- Start server (dev):
+
+```bash
+npm run dev   # requires nodemon
+# or
+npm start     # production
+```
+
+- Endpoints:
+  - `POST /api/contact` — Accepts JSON { name, email, subject, message }
+  - `GET /api/messages` — Returns saved messages (admin view)
+
+- Database file: `server/database.sqlite` (created automatically on first run)
+
+> Tip: The Express app serves your existing static site, so once the server is running you can open http://localhost:3000 to view the site and test the contact form.
+
+---
+
 **🎨 Your portfolio is now modern, beautiful, and ready to impress! 🚀**
 
 ---

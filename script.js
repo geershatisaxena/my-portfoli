@@ -611,7 +611,59 @@ function init() {
         initCertificateModal();
     }
     
-    // Contact form (only on contact page)
+    // Contact form init (only on contact page)
+    function initContactForm() {
+        const form = document.getElementById('contactForm');
+        const status = document.getElementById('formStatus');
+        if (!form) return;
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            status.textContent = '';
+            status.className = '';
+
+            const name = (form.name && form.name.value || '').trim();
+            const email = (form.email && form.email.value || '').trim();
+            const subject = (form.subject && form.subject.value || '').trim();
+            const message = (form.message && form.message.value || '').trim();
+
+            if (!name || !email || !message) {
+                status.textContent = 'Please fill the required fields (name, email, message).';
+                status.className = 'error';
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.classList.add('loading');
+
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, subject, message })
+                });
+
+                const data = await res.json();
+
+                if (res.ok && data.success) {
+                    status.textContent = 'Message sent — thank you! I will get back to you soon.';
+                    status.className = 'success';
+                    form.reset();
+                } else {
+                    status.textContent = data.error || 'Something went wrong. Please try again later.';
+                    status.className = 'error';
+                }
+            } catch (err) {
+                status.textContent = 'Network error. Please try again later.';
+                status.className = 'error';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('loading');
+            }
+        });
+    }
+
     if (document.getElementById('contactForm')) {
         initContactForm();
     }

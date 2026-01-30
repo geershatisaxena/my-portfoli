@@ -2144,3 +2144,30 @@ footer::before {
         height: 44px;
     }
 }
+
+/* ===== Contact form status & loading ===== */
+.form-status {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.form-status.success { color: #16a34a; }
+.form-status.error { color: #dc2626; }
+
+.btn.loading {
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+.btn.loading::after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 0.5rem;
+    border: 2px solid rgba(255,255,255,0.6);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
