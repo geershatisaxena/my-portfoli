@@ -535,6 +535,46 @@ function initCurrentYear() {
 }
 
 // ===== Initialize Everything =====
+function initBackToTop() {
+    // Create the Back to Top button if it doesn't exist
+    if (document.getElementById('backToTop')) return;
+
+    const btn = document.createElement('button');
+    btn.id = 'backToTop';
+    btn.setAttribute('aria-label', 'Back to top');
+    btn.title = 'Back to top';
+    btn.innerHTML = '<i class="fas fa-chevron-up" aria-hidden="true"></i>';
+    btn.type = 'button';
+
+    document.body.appendChild(btn);
+
+    // Toggle visibility based on scroll position
+    const toggleVisibility = () => {
+        if (window.scrollY > 300) {
+            btn.classList.add('show');
+        } else {
+            btn.classList.remove('show');
+        }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    // Initial check
+    toggleVisibility();
+
+    // Smooth scroll to top on click
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Keyboard accessibility (Enter or Space)
+    btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    });
+}
+
 function init() {
     // Theme
     initTheme();
@@ -581,6 +621,9 @@ function init() {
     
     // Current year in footer
     initCurrentYear();
+
+    // Back to top button
+    initBackToTop();
     
     // Page load animation
     document.body.style.opacity = '0';
