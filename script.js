@@ -638,7 +638,7 @@ function init() {
             submitBtn.classList.add('loading');
 
             try {
-                const res = await fetch('/api/contact', {
+                const res = await fetch('/AIzaSyDCUgLLk-Tlm_hhf_ZTfHMRWWMRPm5e6t8', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name, email, subject, message })
