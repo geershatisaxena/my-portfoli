@@ -876,44 +876,49 @@ img {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     color: var(--text-primary);
-    animation: subtleShine 2s ease-in-out infinite;
 }
 
-.skill-progress {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+/* ===== Skill Level Badges ===== */
+.skill-level {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
-.progress-bar {
-    flex: 1;
-    height: 8px;
-    background-color: var(--bg-secondary);
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+/* Level Colors */
+.skill-level.beginner {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.3));
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--primary), var(--accent));
-    border-radius: 4px;
-    width: 0;
-    transition: width 1.5s ease-in-out;
-    box-shadow: 0 0 10px var(--primary-glow);
+.skill-level.intermediate {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(139, 92, 246, 0.3));
+    color: #8b5cf6;
+    border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
-.progress-text {
-    font-weight: 600;
-    color: var(--primary);
-    min-width: 40px;
-    text-shadow: 0 0 5px var(--primary-glow);
+.skill-level.professional {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.3));
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.skill-level.expert {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(239, 68, 68, 0.3));
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
 .skill-description {
     font-size: 0.9rem;
     color: var(--text-secondary);
+    line-height: 1.5;
 }
 
 .tools-grid {
