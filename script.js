@@ -254,47 +254,47 @@ function initCertificateModal() {
         {
             title: "Career Essentials in Project Management",
             description: "Successfully completed Career Essentials in Project Management by Microsoft and LinkedIn, gaining foundational knowledge of project planning, scheduling, risk management, stakeholder communication, and essential tools and methodologies used to successfully manage projects end to end.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQHmISaWOXHtjg/feedshare-shrink_1280/feedshare-shrink_1280/0/1729959683329?e=1770249600&v=beta&t=4u3dZvXzuAwKows07X90hLGPVo9ov-RtiMIZV9u64p0"
+            image: "Certificates/Cert35.png"
         },
         {
             title: "Copilot in PowerPoint: From Prompt to Presentation",
             description: "Successfully completed Copilot in PowerPoint: From Prompt to Presentation by Microsoft and LinkedIn, gaining hands-on experience in using Microsoft Copilot to transform prompts into structured, visually engaging presentations, streamline slide creation, and enhance storytelling and productivity.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQGXNx_V2ETp8w/feedshare-shrink_1280/feedshare-shrink_1280/0/1722011728379?e=1770249600&v=beta&t=x5O5dDrkpo1k0X7JCvMswG50VblKKbmJwauJEVnUj4Y"
+            image: "Certificates/Cert36.png"
         },
         {
             title: "Copilot in Teams: AI-Powered Collaboration",
             description: "Successfully completed Copilot in Teams: AI-Powered Collaboration by Microsoft and LinkedIn, gaining hands-on experience in using Microsoft Copilot to enhance meetings, summarize discussions, manage tasks, and improve team collaboration through AI-driven insights.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQEhC46wqJfRXA/feedshare-shrink_1280/feedshare-shrink_1280/0/1721991645147?e=1770249600&v=beta&t=OjfkAshDcc0loJx5BSkdlso-3mP_lF6qMOOJ2iDIYjg"
+            image: "Certificates/Cert37.png"
         },
         {
             title: "Copilot in Word: Create and Refine Documents with AI",
             description: "Successfully completed Copilot in Word: Create and Refine Documents with AI by Microsoft and LinkedIn, gaining hands-on experience in using Microsoft Copilot to draft, edit, summarize, and refine documents efficiently while improving clarity, structure, and overall writing quality.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQG1yygVkhEuqw/feedshare-shrink_1280/feedshare-shrink_1280/0/1721993675063?e=1770249600&v=beta&t=KvXeHBDBh0E084JocWH8HuUOjUzmJREWKMekO4vnFz8"
+            image: "Certificates/Cert38.png"
         },
         {
             title: "Ethics in the Age of Generative AI",
             description: "Successfully completed Ethics in the Age of Generative AI, gaining a clear understanding of responsible AI principles, ethical challenges, bias mitigation, data privacy, and the societal impact of generative AI technologies.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQEFo_TgYkbfuQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1721729885966?e=1770249600&v=beta&t=Iprz4R36gp9fJMY5_vQHlaH_JC_QVsS3lCtJ0Zf7XZc"
+            image: "Certificates/Cert39.png"
         },
         {
             title: "Introduction to Artificial Intelligence ",
             description: "Successfully completed Introduction to Artificial Intelligence, gaining a comprehensive understanding of core AI concepts, machine learning fundamentals, and intelligent systems, along with insights into real-world applications, ethical considerations, and the growing impact of AI technologies across various industries and domains.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQG6NKmgEvg5gg/feedshare-shrink_1280/feedshare-shrink_1280/0/1721734644207?e=1770249600&v=beta&t=Q-HiUbuFXH-i_SGqCw8iFi_c385PlJ6-uwtHjKoqOGY"
+            image: "Certificates/Cert40.png"
         },
         {
             title: "Excel with Copilot: AI-Driven Data Analysis ",
             description: "Successfully completed Excel with Copilot: AI-Driven Data Analysis, gaining in-depth hands-on experience in leveraging Microsoft Copilot to streamline data analysis workflows, automate complex calculations, generate meaningful insights, create dynamic charts and visualizations, and support accurate, efficient, and data-driven decision-making within Excel.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQEHLzH9Af5Mxw/feedshare-shrink_1280/feedshare-shrink_1280/0/1721996738698?e=1770249600&v=beta&t=TpNiKSsjz-d7Rb2S-XVAmZqCpKmyC9GbE7KnhP9aY4Q"
+            image: "Certificates/Cert41.png"
         },
         {
             title: "Microsoft Copilot for Productivity ",
             description: "Successfully earned the “Microsoft Copilot for Productivity” certification, jointly issued by Microsoft and LinkedIn. This credential validates my ability to leverage AI-powered tools to streamline workflows, enhance collaboration, and drive efficiency in professional environments. Through this certification, I gained practical insights into applying Copilot features across tasks such as document creation, data analysis, and communication management. It highlights my commitment to staying ahead with modern productivity solutions and demonstrates my readiness to integrate AI-driven approaches into real-world projects.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQEkd2Z7kKD4SQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1722043308757?e=1770249600&v=beta&t=WtExADf2rwHdlZFGC-qcNbgH3HmZNw1j-RdwJp8xNGo"
+            image: "Certificates/Cert42.png"
         },
         {
             title: "Managing Projects with Microsoft 365",
             description: "Successfully earned the “Managing Projects with Microsoft 365” certification, issued by LinkedIn. This credential validates my ability to effectively manage projects using Microsoft 365 tools, including planning, tracking, and collaboration features. Through this certification, I gained practical insights into leveraging Microsoft 365 for project management tasks such as task assignment, timeline creation, and resource allocation. It highlights my commitment to staying ahead with modern productivity solutions and demonstrates my readiness to integrate AI-driven approaches into real-world projects.",
-            image: "https://media.licdn.com/dms/image/v2/D4E22AQH12oxCg__HKA/feedshare-shrink_1280/feedshare-shrink_1280/0/1722617291623?e=1770249600&v=beta&t=ExPYXcAN_ME2KOGRZBfXV1SIuZYociYQuzH7N_dkPAU"
+            image: "Certificates/Cert43.png"
         },
         {
             title: "Data Science Tools",
@@ -364,7 +364,12 @@ function initCertificateModal() {
         {
             title: "Strengthen Your Decision-Making with Generative AI",
             description: "Successfully Completed the “Strengthen Your Decision-Making with Generative AI” program, gaining a practical understanding of how generative AI can be applied to support data-driven decision-making. The program focused on using AI-powered tools to analyze information, generate insights, evaluate alternatives, and enhance strategic and operational decisions, while also considering responsible and ethical use of generative AI in real-world business contexts.",
-            image: "https://media.licdn.com/dms/image/v2/D5622AQHhfNzIOJ4Qcg/feedshare-shrink_1280/B56Zv6ouX_JcAc-/0/1769436538661?e=1770854400&v=beta&t=yij6yEAdwqKu_AuJc_3KuVtXI-Vwmkj0_gUGv7fpBtc"
+            image: "Certificates/Cert45.png"
+        },
+        {
+            title: "Building an Adaptability Mindset in the Age of AI",
+            description: "Completed the “Building an Adaptability Mindset in the Age of AI” program, developing a forward-looking understanding of how artificial intelligence is transforming the workplace. The program emphasized adaptability, continuous learning, and embracing change, while building the skills needed to work effectively alongside AI technologies, respond to evolving industry demands, and remain resilient in a rapidly changing digital environment.",
+            image:"Certificates/Cert44.png"
         }
     ];
     
