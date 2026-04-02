@@ -479,20 +479,6 @@ body.dark-mode .navbar {
   opacity: .85;
 }
 
-/* Decorative orbiting dot */
-.image-container::after {
-  content: '';
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background: linear-gradient(135deg, var(--primary), var(--accent));
-  border-radius: 50%;
-  top: 12%;
-  right: -5px;
-  box-shadow: 0 0 20px var(--accent-glow);
-  animation: orbitDot 8s linear infinite;
-  z-index: 4;
-}
 
 /* Scroll indicator */
 .scroll-indicator {
@@ -1650,11 +1636,6 @@ footer::before {
 
 @keyframes spinBorder {
   to { transform: rotate(360deg); }
-}
-
-@keyframes orbitDot {
-  0%   { transform: rotate(0deg) translateX(195px) rotate(0deg); }
-  100% { transform: rotate(360deg) translateX(195px) rotate(-360deg); }
 }
 
 @keyframes floatBounce {
