@@ -370,7 +370,13 @@ function initCertificateModal() {
             title: "Building an Adaptability Mindset in the Age of AI",
             description: "Completed the “Building an Adaptability Mindset in the Age of AI” program, developing a forward-looking understanding of how artificial intelligence is transforming the workplace. The program emphasized adaptability, continuous learning, and embracing change, while building the skills needed to work effectively alongside AI technologies, respond to evolving industry demands, and remain resilient in a rapidly changing digital environment.",
             image:"Certificates/Cert44.png"
-        }
+        },
+        {
+            title: "Python for Data Science",
+            description: "Successfully earned the “Python for Data Science” certification, building strong hands-on expertise in end-to-end data analysis using Python. Gained practical experience in data cleaning, transformation, and manipulation, conducting exploratory data analysis (EDA), and creating insightful visualizations with powerful libraries such as NumPy, Pandas, and Matplotlib. Developed a solid understanding of writing efficient, scalable, readable, and reproducible data-driven solutions for real-world analytical tasks.",
+            image: "Certificates/Cert46.jpeg"
+        },
+
     ];
     
     // Open modal
