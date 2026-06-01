@@ -4,7 +4,7 @@
 
 <br>
 <img 
-src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=30&duration=3000&pause=1000&color=00FFFF&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=130&lines=%F0%9F%9A%80+MODERN+PORTFOLIO+DOCUMENTATION;%F0%9F%8E%A8+PREMIUM+DARK+THEME+WITH+NEON+UI;%E2%9C%A8+ADVANCED+ANIMATIONS+AND+GLOW+EFFECTS;%F0%9F%94%A5+FULLY+RESPONSIVE+AND+PRODUCTION+READY" 
+src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=18&duration=3000&pause=1000&color=FF10F0&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=80&lines=MODERN+PORTFOLIO+DOCUMENTATION;PREMIUM+DARK+THEME+WITH+NEON+UI;ADVANCED+ANIMATIONS+AND+GLOW+EFFECTS;FULLY+RESPONSIVE+AND+PRODUCTION+READY" 
 alt="Typing SVG" 
 width="100%" 
 />
