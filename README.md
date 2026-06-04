@@ -3,8 +3,11 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=320&color=gradient&customColorList=24,12,20,17,30,6,2&text=🌈%20MY%20PORTFOLIO&fontSize=58&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Modern%20Developer%20Portfolio%20Documentation%20%7C%20UI%20%2B%20UX%20Enhancement&descAlignY=62"/>
 
 <br>
-
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=30&duration=3000&pause=1000&color=00FFFF&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=130&lines=🚀+MODERN+PORTFOLIO+DOCUMENTATION;🎨+PREMIUM+DARK+THEME+WITH+NEON+UI;✨+ADVANCED+ANIMATIONS+AND+GLOW+EFFECTS;🔥+FULLY+RESPONSIVE+AND+PRODUCTION+READY"/>
+<img 
+src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=18&duration=3000&pause=1000&color=39FF14&center=true&vCenter=true&multiline=true&repeat=true&width=1200&height=120&lines=MODERN+PORTFOLIO+DOCUMENTATION;PREMIUM+DARK+THEME+WITH+NEON+UI;ADVANCED+ANIMATIONS+AND+GLOW+EFFECTS;FULLY+RESPONSIVE+AND+PRODUCTION+READY" 
+alt="Typing SVG" 
+width="100%" 
+/>
 
 <br>
 
