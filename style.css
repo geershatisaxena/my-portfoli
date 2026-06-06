@@ -346,7 +346,68 @@ body.dark-mode .navbar {
   overflow: hidden;
 }
 
-/* Animated mesh gradient background */
+/* ── Adaptive Hero Background Images ── */
+/* Two <span> elements injected via the hero-bg wrapper */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Both images stacked; crossfade by toggling opacity */
+.hero-bg-light,
+.hero-bg-dark {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: opacity 0.55s ease;
+}
+
+/* Light-mode image */
+.hero-bg-light {
+  background-image: url('Pics/9.png');
+  opacity: 1;
+}
+
+/* Dark-mode image */
+.hero-bg-dark {
+  background-image: url('Pics/8.png');
+  opacity: 0;
+}
+
+/* In dark mode: show dark image, hide light image */
+body.dark-mode .hero-bg-light { opacity: 0; }
+body.dark-mode .hero-bg-dark  { opacity: 1; }
+
+/* Colour-tinted scrim over the background image
+   — ensures text stays readable in both modes */
+.hero-bg-scrim {
+  position: absolute;
+  inset: 0;
+  /* Light mode: soft warm wash */
+  background: linear-gradient(
+    135deg,
+    rgba(245, 239, 240, 0.82) 0%,
+    rgba(236, 220, 221, 0.68) 50%,
+    rgba(253, 248, 248, 0.75) 100%
+  );
+  transition: background 0.55s ease;
+}
+
+body.dark-mode .hero-bg-scrim {
+  /* Dark mode: deep purple-black wash */
+  background: linear-gradient(
+    135deg,
+    rgba(13, 4, 16, 0.85) 0%,
+    rgba(21, 8, 32, 0.72) 50%,
+    rgba(28, 15, 42, 0.78) 100%
+  );
+}
+
+/* Animated mesh gradient background — raised above bg image */
 .hero::before {
   content: '';
   position: absolute;
@@ -359,6 +420,7 @@ body.dark-mode .navbar {
     radial-gradient(ellipse 50% 50% at 75% 30%, rgba(196,21,93,.10) 0%, transparent 60%);
   animation: meshDrift 20s ease-in-out infinite alternate;
   pointer-events: none;
+  z-index: 1;
 }
 
 /* Floating particles */
@@ -374,6 +436,7 @@ body.dark-mode .navbar {
   opacity: .35;
   animation: particleDrift 40s linear infinite;
   pointer-events: none;
+  z-index: 1;
 }
 
 .hero-content {
