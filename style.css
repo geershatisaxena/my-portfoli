@@ -368,13 +368,13 @@ body.dark-mode .navbar {
 
 /* Light-mode image */
 .hero-bg-light {
-  background-image: url('Pics/9.png');
+  background-image: url('Pics/201.gif');
   opacity: 1;
 }
 
 /* Dark-mode image */
 .hero-bg-dark {
-  background-image: url('Pics/8.png');
+  background-image: url('Pics/201.gif');
   opacity: 0;
 }
 
