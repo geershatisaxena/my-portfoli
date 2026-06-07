@@ -656,6 +656,30 @@ body.dark-mode .hero-bg-scrim {
   margin-bottom: .4rem;
 }
 
+/* Both images stacked; crossfade by toggling opacity */
+.hero-bg-light,
+.hero-bg-dark {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: opacity 0.55s ease;
+}
+
+/* Light-mode image */
+.hero-bg-light {
+  background-image: url('Pics/8.png');
+  opacity: 1;
+}
+
+/* Dark-mode image */
+.hero-bg-dark {
+  background-image: url('Pics/8.png');
+  opacity: 0;
+}
+
+
 /* ══════════════════════════════════════════
    PAGE HERO (inner pages)
 ══════════════════════════════════════════ */
@@ -694,6 +718,11 @@ body.dark-mode .hero-bg-scrim {
   position: relative;
   z-index: 1;
 }
+
+
+
+
+
 
 /* ══════════════════════════════════════════
    ABOUT DETAIL
