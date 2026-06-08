@@ -709,7 +709,7 @@ function initBackgroundMusic() {
     audio.style.display = 'none';
 
     var source = document.createElement('source');
-    source.src = '';
+    source.src = 'Vaari Jaavan Dhurandhar The Revenge 320 Kbps.mp3';
     source.type = 'audio/mpeg';
 
     audio.appendChild(source);
