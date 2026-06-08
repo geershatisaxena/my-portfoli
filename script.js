@@ -709,7 +709,7 @@ function initBackgroundMusic() {
     audio.style.display = 'none';
 
     var source = document.createElement('source');
-    source.src = 'Vaari Jaavan Dhurandhar The Revenge 320 Kbps.mp3';
+    source.src = 'Ishq Jalakar - Karvaan  Dhurandhar  Ranveer Singh, Shashwat Sachdev, Aditya Dhar.mp3';
     source.type = 'audio/mpeg';
 
     audio.appendChild(source);
