@@ -709,7 +709,7 @@ function initBackgroundMusic() {
     audio.style.display = 'none';
 
     var source = document.createElement('source');
-    source.src = 'Tamma Tamma(Audio) Dhurandhar The Revenge  Ranveer Singh Bappi Lahiri, Anuradha Paudwal, Indeevar - Copy.mp3';
+    source.src = '';
     source.type = 'audio/mpeg';
 
     audio.appendChild(source);
