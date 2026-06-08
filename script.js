@@ -687,6 +687,9 @@ function init() {
 
     // Back to top button
     initBackToTop();
+
+    // Background music
+    initBackgroundMusic();
     
     // Page load animation
     document.body.style.opacity = '0';
@@ -695,6 +698,68 @@ function init() {
     window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     });
+}
+
+// ===== Background Music =====
+function initBackgroundMusic() {
+    var audio = document.createElement('audio');
+    audio.id = 'bgMusic';
+    audio.loop = true;
+    audio.preload = 'auto';
+    audio.style.display = 'none';
+
+    var source = document.createElement('source');
+    source.src = 'Vaari Jaavan Dhurandhar The Revenge 320 Kbps.mp3';
+    source.type = 'audio/mpeg';
+
+    audio.appendChild(source);
+    document.body.appendChild(audio);
+
+    audio.volume = 0.4;
+
+    // Resume from saved position (so song doesn't restart on page change)
+    var savedTime = parseFloat(sessionStorage.getItem('bgMusicTime') || '0');
+
+    // Save current time every second
+    setInterval(function () {
+        if (!audio.paused) {
+            sessionStorage.setItem('bgMusicTime', audio.currentTime);
+        }
+    }, 1000);
+
+    // Also save before page unloads
+    window.addEventListener('beforeunload', function () {
+        sessionStorage.setItem('bgMusicTime', audio.currentTime);
+    });
+
+    function startPlay() {
+        if (savedTime > 0) {
+            audio.currentTime = savedTime;
+        }
+        var playPromise = audio.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(function () {
+                var events = ['click', 'touchstart', 'keydown', 'scroll'];
+                function onInteraction() {
+                    if (savedTime > 0) audio.currentTime = savedTime;
+                    audio.play();
+                    events.forEach(function (e) {
+                        document.removeEventListener(e, onInteraction);
+                    });
+                }
+                events.forEach(function (e) {
+                    document.addEventListener(e, onInteraction, { once: true });
+                });
+            });
+        }
+    }
+
+    // Wait for enough audio to be loaded before seeking
+    if (audio.readyState >= 1) {
+        startPlay();
+    } else {
+        audio.addEventListener('loadedmetadata', startPlay, { once: true });
+    }
 }
 
 // ===== Initialize when DOM is loaded =====
