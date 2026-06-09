@@ -104,13 +104,15 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ### Color Palette
 
-| Element | Color Style |
-|---------|-------------|
-| Primary Theme | Indigo |
-| Accent Theme | Neon Pink |
-| Background | Deep Navy |
-| Text Color | Soft White |
-| Glow Effects | Cyan & Purple |
+| Element            | Color Style                                      |
+|--------------------|--------------------------------------------------|
+| Primary Theme      | Royal Purple (#7c2b8a / #b061c8)                |
+| Accent Theme       | Vibrant Magenta Pink (#c4155d / #e84393)        |
+| Background         | Soft Blush Pink (#f5eff0) / Deep Purple Black (#0d0410) |
+| Text Color         | Deep Purple Black (#12061a) / Soft Lavender White (#f0e8f5) |
+| Secondary BG       | Warm Pinkish Beige (#ecdcdd) / Dark Purple (#1c0f2a) |
+| Glow Effects       | Purple & Magenta Glow                            |
+| Gradient Heading   | Purple → Magenta → Pink                          |
 
 ---
 
