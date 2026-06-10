@@ -27,7 +27,7 @@ width="100%"
 
 ---
 
-# 🌈 Portfolio Overview
+#  Portfolio Overview
 
 <div align="center">
 
