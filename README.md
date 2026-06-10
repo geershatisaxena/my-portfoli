@@ -120,7 +120,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 # ✨ Advanced Animations
 
-![Animations](assets/animation-preview.png)
+
 
 ### Animation Effects
 
