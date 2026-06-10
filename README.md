@@ -40,6 +40,7 @@ This portfolio modernization project focuses on transforming a traditional portf
 
 The redesign introduces a premium dark theme, neon-inspired glow effects, animated typography, smooth transitions, responsive layouts, and elegant UI enhancements all while preserving the original HTML structure and JavaScript functionality.
 </p>
+
 ---
 
 # 🎯 Project Objectives
