@@ -146,7 +146,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 # 🌈 Neon Glow Effects
 
-![Glow Effects](assets/glow-effects.png)
+![Glow Effects](https://github.com/geershatisaxena/my-portfoli/blob/main/Screenshots/Screenshot%20(22).png)
 
 ### Glow Components
 
