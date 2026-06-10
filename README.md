@@ -35,10 +35,11 @@ width="100%"
 
 </div>
 
+<p align="justify">
 This portfolio modernization project focuses on transforming a traditional portfolio interface into a visually rich, modern, and highly interactive experience using advanced CSS styling techniques.
 
-The redesign introduces a premium dark theme, neon-inspired glow effects, animated typography, smooth transitions, responsive layouts, and elegant UI enhancements — all while preserving the original HTML structure and JavaScript functionality.
-
+The redesign introduces a premium dark theme, neon-inspired glow effects, animated typography, smooth transitions, responsive layouts, and elegant UI enhancements all while preserving the original HTML structure and JavaScript functionality.
+</p>
 ---
 
 # 🎯 Project Objectives
