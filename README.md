@@ -45,7 +45,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 # 🎯 Project Objectives
 
-### 🎨 UI Modernization
+###  UI Modernization
 
 - Create a premium dark theme
 - Introduce neon-inspired color palettes
