@@ -5,7 +5,7 @@ const navLinks = document.querySelector('.nav-links');
 const currentYear = document.getElementById('currentYear');
 const downloadCV = document.getElementById('downloadCV');
 
-// ===== Theme Toggle Functionality =====
+
 function initTheme() {
     // Check localStorage or default to dark mode
     const savedTheme = localStorage.getItem('theme') || 'dark-mode';
