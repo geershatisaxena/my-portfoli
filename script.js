@@ -11,7 +11,7 @@ function initTheme() {
     const savedTheme = localStorage.getItem('theme') || 'dark-mode';
     document.body.className = savedTheme;
     
-    // Update toggle icon
+    
     const icon = themeToggle.querySelector('i');
     if (icon) {
         icon.className = savedTheme === 'dark-mode' ? 'fas fa-sun' : 'fas fa-moon';
