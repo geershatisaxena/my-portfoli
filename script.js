@@ -709,7 +709,7 @@ function initBackgroundMusic() {
     audio.style.display = 'none';
 
     var source = document.createElement('source');
-    source.src = '';
+    source.src = 'Songs/Bombay Theme (Bombay  Soundtrack Version).mp3';
     source.type = 'audio/mpeg';
 
     audio.appendChild(source);
