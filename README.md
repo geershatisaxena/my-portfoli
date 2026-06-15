@@ -92,7 +92,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ---
 
-# 🌑 Modern Dark Theme
+#  Modern Dark Theme
 
 ![Dark Theme](https://github.com/geershatisaxena/my-portfoli/blob/main/Screenshots/Screenshot%20(21).png)
 
