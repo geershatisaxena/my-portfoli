@@ -669,13 +669,13 @@ body.dark-mode .hero-bg-scrim {
 
 /* Light-mode image */
 .hero-bg-light {
-  background-image: url('Pics/BG.gif');
+  background-image: url('Pics/graphs.gif');
   opacity: 1;
 }
 
 /* Dark-mode image */
 .hero-bg-dark {
-  background-image: url('Pics/BG.gif');
+  background-image: url('Pics/graphs.gif');
   opacity: 0;
 }
 
