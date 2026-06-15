@@ -140,7 +140,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
  Enhances visual storytelling
 
-⚡ Improves engagement
+ Improves engagement
 
 ---
 
