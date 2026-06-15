@@ -136,7 +136,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
  Creates premium user experience
 
-🔥 Adds modern interactive feel
+ Adds modern interactive feel
 
 🎨 Enhances visual storytelling
 
