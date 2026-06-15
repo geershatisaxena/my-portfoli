@@ -66,7 +66,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 - Modern responsive layouts
 - Enhanced accessibility support
 
-### 🚀 Performance Optimization
+###  Performance Optimization
 
 - Hardware-accelerated animations
 - Lightweight CSS implementation
