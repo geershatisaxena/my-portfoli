@@ -75,7 +75,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ---
 
-# 📂 Documentation Structure
+#  Documentation Structure
 
 | File | Purpose |
 |------|---------|
