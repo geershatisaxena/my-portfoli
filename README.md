@@ -59,7 +59,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 - Animated typography
 - Floating background visuals
 
-### ⚡ User Experience Improvements
+###  User Experience Improvements
 
 - Better readability
 - Interactive UI feedback
