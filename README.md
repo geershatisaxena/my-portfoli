@@ -52,21 +52,21 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 - Enhance visual hierarchy
 - Improve overall aesthetics
 
-### ✨ Animation Enhancements
+###  Animation Enhancements
 
 - Smooth entrance animations
 - Glowing hover effects
 - Animated typography
 - Floating background visuals
 
-### ⚡ User Experience Improvements
+###  User Experience Improvements
 
 - Better readability
 - Interactive UI feedback
 - Modern responsive layouts
 - Enhanced accessibility support
 
-### 🚀 Performance Optimization
+###  Performance Optimization
 
 - Hardware-accelerated animations
 - Lightweight CSS implementation
@@ -75,7 +75,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ---
 
-# 📂 Documentation Structure
+#  Documentation Structure
 
 | File | Purpose |
 |------|---------|
@@ -88,11 +88,11 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ---
 
-# 🏆 Key Modern Features
+#  Key Modern Features
 
 ---
 
-# 🌑 Modern Dark Theme
+#  Modern Dark Theme
 
 ![Dark Theme](https://github.com/geershatisaxena/my-portfoli/blob/main/Screenshots/Screenshot%20(21).png)
 
@@ -118,7 +118,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ---
 
-# ✨ Advanced Animations
+#  Advanced Animations
 
 
 
@@ -134,13 +134,13 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ### Animation Benefits
 
-🚀 Creates premium user experience
+ Creates premium user experience
 
-🔥 Adds modern interactive feel
+ Adds modern interactive feel
 
-🎨 Enhances visual storytelling
+ Enhances visual storytelling
 
-⚡ Improves engagement
+ Improves engagement
 
 ---
 
