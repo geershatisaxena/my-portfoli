@@ -52,7 +52,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 - Enhance visual hierarchy
 - Improve overall aesthetics
 
-### ✨ Animation Enhancements
+###  Animation Enhancements
 
 - Smooth entrance animations
 - Glowing hover effects
