@@ -161,7 +161,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
  Modern futuristic appearance
 
-🔥 Enhanced UI depth
+ Enhanced UI depth
 
 📈 Improved focus areas
 
