@@ -165,7 +165,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
  Improved focus areas
 
-🎯 Better user interaction feedback
+ Better user interaction feedback
 
 ---
 
