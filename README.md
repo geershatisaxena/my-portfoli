@@ -179,7 +179,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 |--------|---------|
 | Desktop | Optimized |
 | Laptop | ✅ Optimized |
-| Tablet | ✅ Responsive |
+| Tablet |  Responsive |
 | Mobile | ✅ Fully Responsive |
 
 ### Responsive Features
