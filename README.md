@@ -163,7 +163,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
  Enhanced UI depth
 
-📈 Improved focus areas
+ Improved focus areas
 
 🎯 Better user interaction feedback
 
