@@ -169,7 +169,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ---
 
-# 📱 Fully Responsive Design
+#  Fully Responsive Design
 
 ![Responsive Design](assets/responsive-design.png)
 
