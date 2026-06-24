@@ -221,7 +221,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ### Accessibility Support
 
-✅ Reduced motion compatibility
+ Reduced motion compatibility
 
 ✅ High contrast readability
 
