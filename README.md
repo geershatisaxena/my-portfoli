@@ -207,7 +207,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
  Fast loading experience
 
-⚡ Smooth interactions
+ Smooth interactions
 
 📈 Optimized rendering
 
