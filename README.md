@@ -227,7 +227,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ✅ Keyboard focus visibility
 
-✅ WCAG compliance support
+ WCAG compliance support
 
  Responsive text hierarchy
 
