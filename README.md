@@ -229,7 +229,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 ✅ WCAG compliance support
 
-✅ Responsive text hierarchy
+ Responsive text hierarchy
 
 ### User Experience Enhancements
 
