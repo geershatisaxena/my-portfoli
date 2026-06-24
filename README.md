@@ -223,7 +223,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
  Reduced motion compatibility
 
-✅ High contrast readability
+ High contrast readability
 
 ✅ Keyboard focus visibility
 
