@@ -217,7 +217,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 #  Accessibility Features
 
-![Accessibility](assets/accessibility.png)
+
 
 ### Accessibility Support
 
