@@ -193,7 +193,7 @@ The redesign introduces a premium dark theme, neon-inspired glow effects, animat
 
 #  Performance Optimization
 
-![Performance](assets/performance-dashboard.png)
+
 
 ### Optimizations Included
 
