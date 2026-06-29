@@ -621,6 +621,11 @@ function init() {
     if (document.querySelector('.view-certificate')) {
         initCertificateModal();
     }
+
+    // Testimonials carousel (only on home page)
+    if (document.getElementById('testimonialsTrack')) {
+        initTestimonialsCarousel();
+    }
     
     // Contact form init (only on contact page)
     function initContactForm() {
@@ -760,6 +765,123 @@ function initBackgroundMusic() {
     } else {
         audio.addEventListener('loadedmetadata', startPlay, { once: true });
     }
+}
+
+// ===== Testimonials Carousel (auto-slide) =====
+function initTestimonialsCarousel() {
+    const track = document.getElementById('testimonialsTrack');
+    const viewport = track.parentElement;
+    const dotsWrap = document.getElementById('testimonialsDots');
+    const prevBtn = document.getElementById('testimonialPrev');
+    const nextBtn = document.getElementById('testimonialNext');
+    const cards = Array.from(track.children);
+
+    if (!cards.length) return;
+
+    const AUTO_DELAY = 4000;
+    let cardsPerView = getCardsPerView();
+    let maxIndex = Math.max(0, cards.length - cardsPerView);
+    let currentIndex = 0;
+    let autoTimer = null;
+
+    function getCardsPerView() {
+        const w = window.innerWidth;
+        if (w <= 768) return 1;
+        if (w <= 1024) return 2;
+        return 3;
+    }
+
+    function buildDots() {
+        dotsWrap.innerHTML = '';
+        const dotCount = maxIndex + 1;
+        for (let i = 0; i < dotCount; i++) {
+            const dot = document.createElement('button');
+            dot.className = 'dot';
+            dot.setAttribute('aria-label', 'Go to testimonial group ' + (i + 1));
+            dot.addEventListener('click', () => goTo(i));
+            dotsWrap.appendChild(dot);
+        }
+        updateDots();
+    }
+
+    function updateDots() {
+        const dots = dotsWrap.querySelectorAll('.dot');
+        dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+    }
+
+    function update() {
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const gap = parseFloat(getComputedStyle(track).gap) || 0;
+        const offset = currentIndex * (cardWidth + gap);
+        track.style.transform = `translateX(-${offset}px)`;
+        updateDots();
+    }
+
+    function goTo(index) {
+        currentIndex = Math.max(0, Math.min(index, maxIndex));
+        update();
+        restartAutoplay();
+    }
+
+    function next() {
+        currentIndex = currentIndex >= maxIndex ? 0 : currentIndex + 1;
+        update();
+    }
+
+    function prev() {
+        currentIndex = currentIndex <= 0 ? maxIndex : currentIndex - 1;
+        update();
+    }
+
+    function startAutoplay() {
+        stopAutoplay();
+        autoTimer = setInterval(next, AUTO_DELAY);
+    }
+
+    function stopAutoplay() {
+        if (autoTimer) clearInterval(autoTimer);
+    }
+
+    function restartAutoplay() {
+        startAutoplay();
+    }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); restartAutoplay(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); restartAutoplay(); });
+
+    viewport.addEventListener('mouseenter', stopAutoplay);
+    viewport.addEventListener('mouseleave', startAutoplay);
+
+    // Touch swipe support
+    let touchStartX = 0;
+    viewport.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        stopAutoplay();
+    }, { passive: true });
+
+    viewport.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 40) {
+            diff > 0 ? next() : prev();
+        }
+        startAutoplay();
+    }, { passive: true });
+
+    window.addEventListener('resize', () => {
+        const newCardsPerView = getCardsPerView();
+        if (newCardsPerView !== cardsPerView) {
+            cardsPerView = newCardsPerView;
+            maxIndex = Math.max(0, cards.length - cardsPerView);
+            currentIndex = Math.min(currentIndex, maxIndex);
+            buildDots();
+        }
+        update();
+    });
+
+    buildDots();
+    update();
+    startAutoplay();
 }
 
 // ===== Initialize when DOM is loaded =====
