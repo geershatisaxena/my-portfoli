@@ -1,84 +1,374 @@
-<!-- Place your resume.pdf in the same folder as this file -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Resume — Your Name</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-<style>
-  body{
-    font-family: 'Inter', sans-serif;
-    background: #0A0F1A;
-    color: #E7ECF3;
-    min-height: 100vh;
-  }
-  .heading{
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, #FF4D8D, #FF7A45);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-  .rainbow-line{
-    height: 3px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, #FF4D8D, #FFC542, #34D399, #38BDF8, #A78BFA);
-  }
-  .card-glow{
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.06), 0 30px 60px -25px rgba(255,77,141,0.25);
-  }
-  .download-btn{
-    background: linear-gradient(90deg, #FF4D8D, #B347F5);
-    transition: transform .25s ease, box-shadow .25s ease;
-  }
-  .download-btn:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 15px 30px -10px rgba(255,77,141,0.5);
-  }
-  @keyframes floatIn{
-    from{ opacity:0; transform: translateY(20px); }
-    to{ opacity:1; transform: translateY(0); }
-  }
-  .float-in{ animation: floatIn .7s ease forwards; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geershati Saxena | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="logo.svg">
 </head>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html" class="logo"><img src="logo.svg" alt="Geershati Saxena Logo"></a>
+                <span class="name">Geershati Saxena</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume-page.html">Résumé</a></li>
+                
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-<body class="flex flex-col items-center px-4 sm:px-8 py-16">
+    <main>
+        <section class="hero">
+            <!-- Adaptive background: switches between hero-4.jpeg (light) and hero-5.jpeg (dark) -->
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-bg-light"></div>
+                <div class="hero-bg-dark"></div>
+                <div class="hero-bg-scrim"></div>
+            </div>
 
-  <!-- Heading -->
-  <div class="text-center max-w-2xl float-in">
-    <h1 class="heading font-extrabold text-4xl sm:text-5xl mb-4">My Resume</h1>
-    <p class="text-slate-400 text-sm sm:text-base">
-      Here you can view and download my professional resume.
-    </p>
-  </div>
+            <div class="hero-content fade-in">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight">Geershati Saxena</span></h1>
+                    <h2 class="hero-subtitle">Aspiring Data Analyst</h2>
+                    <p class="hero-description" style="text-align: justify;">
+                        <b>I'm passionate about transforming complex data into meaningful insights by analyzing, 
+                            visualizing, and interpreting the data to support 
+                            informed decision making using modern analytical tools and techniques.</b>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                        <a href="Geershati_Saxena_Resume.pdf" download class="btn btn-outline" id="downloadCV">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="Pics/7.jpeg" 
+                             alt="Geershati Saxena - Professional Photo" class="profile-img">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about-preview" class="scroll-link">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
 
-  <!-- Card -->
-  <div class="mt-12 w-full max-w-3xl bg-white text-slate-800 rounded-2xl card-glow p-6 sm:p-10 float-in" style="animation-delay:.15s;">
+        <section class="about-preview" id="about-preview">
+            
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content slide-up">
+                    <div class="about-text">
+                        <p style="text-align: justify;">
+                           <b>As an aspiring data scientist, I am passionate about transforming complex data into meaningful, real world solutions. 
+                              I believe data creates value when it helps improve experiences, supports informed decision making, and solves practical challenges. 
+                              By combining machine learning expertise, ethical data practices, and effective storytelling, I strive to deliver solutions that are both impactful and responsible.
 
-    <!-- Embedded resume -->
-    <div class="rounded-xl overflow-hidden border border-slate-200">
-      <object data="resume.pdf" type="application/pdf" class="w-full" style="height: 750px;">
-        <iframe src="resume.pdf" class="w-full" style="height: 750px; border:0;" title="Resume PDF Viewer">
-          <p class="p-8 text-center text-slate-500">
-            Your browser can't display the embedded PDF.
-            <br/>
-            <a href="resume.pdf" download class="text-indigo-600 font-semibold underline">Click here to download the resume</a>.
-          </p>
-        </iframe>
-      </object>
-    </div>
+                                     My goal is to build intelligent, scalable, and user friendly systems that bridge the gap between advanced analytics and business needs. 
+                                     I aim to turn complex algorithms into actionable insights, enabling organizations to make faster, data driven decisions with confidence. 
+                                     Through continuous learning, analytical thinking, and a user focused approach, I seek to create innovative solutions that enhance efficiency, drive growth, and unlock the full potential of data.
+</b> </p>
+                        
+                        <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+                    </div>
+                    <div class="about-stats">
+                        <div >
+                            
+                        </div>
+                        <div class="stat-item">
+                            <h3>7+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <p>Technologies Mastered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <p class="text-xs text-slate-400 mt-4 text-center">
-      Trouble viewing it? <a href="resume.pdf" download class="text-indigo-600 underline">Download it directly</a>.
-    </p>
-  </div>
+        <section class="testimonials" id="what-others-say">
+            <div class="container">
+                <h2 class="section-title">Faculty Endorsements</h2>
+                <p class="testimonials-subtitle">
+                    Feedback from professors, mentors, and instructors I've had the pleasure of working with.
+                </p>
 
+                <div class="testimonials-carousel slide-up">
+                    <button class="carousel-arrow carousel-arrow-prev" id="testimonialPrev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="testimonials-viewport">
+                        <div class="testimonials-track" id="testimonialsTrack">
+
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                
+                                <p class="testimonial-text" style="text-align: justify;">
+                                    Geershati consistently impressed me with his analytical rigor and problem solving mindset.
+                                    He doesn't just work with data he approaches every challenge with curiosity, asks the
+                                    right questions, and focuses on understanding the bigger picture before diving into the
+                                    details. His ability to combine technical expertise with critical thinking makes him a
+                                    standout professional and a valuable contributor to any team.
+                                </p>
+
+
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">HG</div>
+                                    <div class="author-info">
+                                        <h4 class="author-name">Mr. Harsh Gour</h4>
+                                        <span class="author-role">IBM Faculty, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                               <p class="testimonial-text" style="text-align: justify;">
+                                 During his Final Year Industrial Training & Internship, Geershati demonstrated exceptional adaptability and a strong eagerness to learn.
+                                 He quickly mastered new tools and technologies, consistently delivering high quality results.
+                                 His ability to transform complex datasets into clear, actionable insights helped streamline decision making and added significant value to the team.
+                               </p>
+
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">AS</div>
+                                    <div class="author-info">
+                                        <h4 class="author-name">Ms. Areeba Shakeel</h4>
+                                        <span class="author-role">Technical Trainer, Digipodium</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p class="testimonial-text" style="text-align: justify;">
+                                  What stands out most about Geershati is his genuine curiosity and passion for learning. 
+                                  He consistently goes beyond the requirements, seeking to understand the underlying concepts rather than simply completing tasks. 
+                                  His analytical mindset and determination to explore the "why" behind every solution reflect a level of dedication that sets him apart from his peers.
+                                </p>
+
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">AKB</div>
+           
+                                    <div class="author-info">
+                                        <h4 class="author-name">Dr. Ajay Kumar Bharti</h4>
+                                        <span class="author-role">Professor, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                               <p class="testimonial-text" style="text-align: justify;">
+                                Geershati's capstone project was among the most impressive and well structured works I have reviewed. 
+                                It showcased clean, maintainable code, insightful visualizations, and thorough documentation. 
+                                What truly distinguished the project was his ability to present complex technical concepts in a clear 
+                                and engaging manner, making the outcomes accessible and meaningful to both technical and non technical audiences.
+                               </p>
+
+                                <div class="testimonial-author">
+                               <div class="author-avatar">AS</div>
+                                    <div class="author-info">
+                                        <h4 class="author-name">Ms. Aastha Singh</h4>
+                                        <span class="author-role">Project Mentor & Assistant Professor, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                 <p class="testimonial-text" style="text-align: justify;">
+                                Geershati stands out for his ability to approach data science problems with both creativity and precision. 
+                                He demonstrates a strong understanding of statistical analysis, machine learning, and data visualization while maintaining a clear focus on real-world impact. 
+                                His projects consistently reflect thoughtful experimentation, attention to detail, and a commitment to deriving actionable insights from data rather than simply building models
+                                 </p>
+
+                                <div class="testimonial-author">
+                               <div class="author-avatar">AR</div>
+                                
+                                    <div class="author-info">
+                                        <h4 class="author-name">Dr. Aarti Rani</h4>
+                                        <span class="author-role">Professor, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text" style="text-align: justify;">
+                               Geershati demonstrated a proactive approach to learning, excelling in hands on projects and real world case studies. 
+                               His strong technical skills, attention to detail, and effective communication enabled him to solve problems efficiently and present insights clearly. 
+                               He consistently delivered quality work and showed great potential as a data science professional in data driven environments.
+                            </p>
+                            <div class="testimonial-author">
+                               <div class="author-avatar">SMT</div>
+                                
+                                    <div class="author-info">
+                                        <h4 class="author-name">Mr. Shivam Mani Tripati</h4>
+                                        <span class="author-role">IBM Faculty, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text" style="text-align: justify;">
+                              Geershati made excellent use of the skills gained through IBM's data science curriculum. 
+                              His ability to combine statistical analysis, machine learning techniques, and business understanding allowed him to deliver solutions that were both technically sound and strategically valuable. 
+                              He consistently demonstrated analytical thinking, problem solving abilities, and a commitment to applying data-driven insights to real world business challenges.
+                            </p>
+                            <div class="testimonial-author">
+                               <div class="author-avatar">SR</div>
+                                
+                                    <div class="author-info">
+                                        <h4 class="author-name">Mr. Sandeep Rana</h4>
+                                        <span class="author-role">IBM Faculty, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                     <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text" style="text-align: justify;">
+                              Geershati's commitment to continuous learning is one of his greatest strengths. 
+                              Throughout his IBM learning journey, he consistently went beyond course requirements, exploring advanced tools, methodologies, and industry best practices to deepen his data science expertise. 
+                              His curiosity, dedication, and willingness to embrace new challenges enabled him to stay ahead of emerging trends and continuously enhance the quality of his work.
+
+                            </p>
+                            <div class="testimonial-author">
+                               <div class="author-avatar">SR</div>
+                                
+                                    <div class="author-info">
+                                        <h4 class="author-name">Ms. Deepika Tiwari</h4>
+                                        <span class="author-role">IBM Faculty, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>        
+
+                      <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text" style="text-align: justify;">
+                             Geershati demonstrated exceptional proficiency in Power BI, effectively transforming complex datasets into insightful and interactive dashboards. 
+                             His ability to leverage data visualization, business intelligence techniques, and analytical thinking enabled stakeholders to make informed decisions with confidence. 
+                             Through his dedication and attention to detail, he consistently delivered impactful reports that translated data into meaningful business value.
+                            </p>
+                            <div class="testimonial-author">
+                               <div class="author-avatar">AP</div>
+                                
+                                    <div class="author-info">
+                                        <h4 class="author-name">Mr.Asit Pathak</h4>
+                                        <span class="author-role">Technical Trainer & Director, Digipodium</span>
+                                    </div>
+                                </div>
+                            </div> 
+
+                     <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text" style="text-align: justify;">
+                             Geershati approached every IBM project with professionalism and meticulous attention to detail. 
+                             His strong command of data preparation, predictive modeling, and data visualization enabled him to transform complex datasets into meaningful insights. 
+                             By combining technical expertise with a results-driven mindset, he consistently delivered accurate, impactful, and business focused solutions that supported informed decisions making.
+
+                            </p>
+                            <div class="testimonial-author">
+                               <div class="author-avatar">DK</div>
+                                
+                                    <div class="author-info">
+                                        <h4 class="author-name">Mr. Dhruv Kumar</h4>
+                                        <span class="author-role">IBM Faculty, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div> 
+
+
+
+
+
+                        <div class="testimonial-card">
+                                <i class="fas fa-quote-left quote-icon"></i>
+                                <p class="testimonial-text" style="text-align: justify;">
+                                 Geershati possesses a strong combination of data science expertise and effective communication skills. 
+                                 He has the ability to transform complex datasets into meaningful insights and present them in a way that is both technically accurate and easy to understand. 
+                                 Whether discussing machine learning models with developers or explaining data driven recommendations to business stakeholders, he consistently bridges the gap between analytics and decision making.
+                                </p>
+
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">VM</div>
+                                    <div class="author-info">
+                                        <h4 class="author-name">Dr. Vinay Mishra</h4>
+                                        <span class="author-role">Professor, Babu Banarasi Das University</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-arrow carousel-arrow-next" id="testimonialNext" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="testimonials-dots" id="testimonialsDots"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                
+            </div>
+            <div class="footer-social">
+               <a href="https://github.com/geershatisaxena" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/geershati-saxena-8b915b306/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/geershati_saxena/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                 <a href="http://leetcode.com/u/geershati_saxena/" target="_blank" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="currentYear"></span> Geershati Saxena. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
