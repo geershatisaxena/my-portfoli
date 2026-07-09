@@ -2052,7 +2052,6 @@ footer::before {
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border-color);
 }
-
 .resume-download-btn {
   margin: 0 auto;
 }
