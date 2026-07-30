@@ -866,6 +866,19 @@ body.dark-mode .hero-bg-scrim {
 .timeline-item:nth-child(even) .timeline-content::before { left: -29px; }
 .timeline-item:nth-child(odd) .timeline-content::before  { right: -29px; }
 
+.timeline-header { display: flex; align-items: center; gap: .9rem; margin-bottom: .4rem; }
+.timeline-logo {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid rgba(124,43,138,.2);
+  box-shadow: 0 2px 8px rgba(124,43,138,.12);
+}
+.timeline-header h3 { margin: 0; }
 .timeline-content h4 { color: var(--accent); margin-bottom: .5rem; font-weight: 600; }
 .timeline-tags { display: flex; gap: .5rem; margin-top: 1rem; flex-wrap: wrap; }
 .tag {
@@ -1577,6 +1590,10 @@ body.dark-mode .soft-skill-item:hover { background: rgba(176,97,200,.12); }
 /* ══════════════════════════════════════════
    TESTIMONIALS — "What Others Say"
 ══════════════════════════════════════════ */
+
+
+
+
 .testimonials-subtitle {
   max-width: 620px;
   margin: -0.75rem auto 3rem;
