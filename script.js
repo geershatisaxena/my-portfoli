@@ -379,7 +379,7 @@ function initCertificateModal() {
         {
             title: "Python (Basic)",
             description: "Earned a HackerRank Python certification validating proficiency in Object-Oriented Programming, algorithmic problem-solving, and 2D grid traversal. Demonstrated the ability to design robust classes with custom constructors, implement precise mathematical logic, and write efficient, well structured code that handles complex edge cases.",
-            image: "Certificates/Cert47.jpeg"
+            image: "Certificates/Cert47.jpg"
         },
 
     ];
