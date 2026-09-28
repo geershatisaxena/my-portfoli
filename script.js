@@ -376,6 +376,11 @@ function initCertificateModal() {
             description: "Successfully earned the “Python for Data Science” certification, building strong hands-on expertise in end to end data analysis using Python. Gained practical experience in data cleaning, transformation, and manipulation, conducting exploratory data analysis (EDA), and creating insightful visualizations with powerful libraries such as NumPy, Pandas, and Matplotlib. Developed a solid understanding of writing efficient, scalable, readable, and reproducible data-driven solutions for real-world analytical tasks.",
             image: "Certificates/Cert46.jpeg"
         },
+        {
+            title: "Python (Basic)",
+            description: "Earned a HackerRank Python certification validating proficiency in Object-Oriented Programming, algorithmic problem-solving, and 2D grid traversal. Demonstrated the ability to design robust classes with custom constructors, implement precise mathematical logic, and write efficient, well structured code that handles complex edge cases.",
+            image: "Certificates/Cert47.jpeg"
+        },
 
     ];
     
